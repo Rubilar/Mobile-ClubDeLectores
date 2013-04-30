@@ -14,7 +14,7 @@
             $.getJSON('http://club.mersap.com/mobile/ClubDeLectores/Json/cupones.json',function(data) {
                   // console.log(data.empresa)   
 				$.each( data.categoria, function( i, categoria ) {
-                    var cupon = $('<li onClick="subCategoria();"><a href="#subCategoria?id=' + categoria.id + '"> ' + categoria.titulo + '</a></li>'); 
+                    var cupon = $('<li onClick="subCategoria();"><a href="#subCategoria?id=' + categoria.id + '" data-transition="slidefade" > ' + categoria.titulo + '</a></li>'); 
                     $('ul[id=category]').append(cupon).listview('refresh');
                 })
             });
@@ -25,7 +25,7 @@
                   // console.log(data.empresa)   
                 $('ul[id=subCategoria]').html("");
 				$.each( dataCategoria.categoria, function( j, categoria ) {
-					 var cupon = $('<li><a href="#Beneficio?id=' + categoria.id + '">' + categoria.titulo + '</a><p>' + categoria.especialidad + '</p></li>'); 
+					 var cupon = $('<li><a href="#Beneficio?id=' + categoria.id + '" data-transition="slidefade">' + categoria.titulo + '</a><p>' + categoria.especialidad + '</p></li>'); 
                     $('ul[id=subCategoria]').append(cupon).listview('refresh');
                 })
             });
@@ -92,12 +92,57 @@
 			<p>Copyright 2013 Club de Lectores - El Mercurio</p>
 		</div><!-- /jqm-footer -->
 	</div><!-- Page Deal -->
-	
 	<div data-role="page" id="Beneficio" class="jqm-demos jqm-demos-home">
 		<div data-role="header" class="jqm-header">
 			<h1 class="jqm-logo"><img src="img/logo-club.gif" alt="jQuery Mobile Framework"></h1>
 		</div>
+
+
+
+
+
+		<div class="imagen">
+			<h2> MININOLAS <br><span style="color:#fff; margin-right:10px; font-weight:normal;">Gourmet</span></h2>
+			<img src="http://club2.mersap.com/clublectores/wp-content/uploads/1363706859_21.jpg" width="100%">
+		</div>
 		<div data-role="content" class="jqm-content">
+
+			<!-- Contenido -->
+
+			<table style="margin:0 25px;">
+				<tr>
+					<td>
+						<div class="ui-grid-a ui-body-c-dos">
+							 <div class="ui-block-a" style="padding:12px 0 12px;">
+								<h3><b>Dirección</b></h3>
+								<h3><a target="_self" href="map.php?longitude=-70.5887954&amp;latitude=-33.4182431" data-rel="dialog" data-transition="slide" class="ui-link"><span class="list_direcciones">Presidente Riesco  3198, Las Condes, Santiago</span> - <span class="list_direcciones">Renato Sánchez  40, Las Condes, Santiago</span> - </a></h3>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div class="ui-grid-a ui-body-c-dos">
+							 <div class="ui-block-a"  style="padding:12px 0 12px;">
+								<h3><b>Fono</b></h3>
+							</div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/images/facebook.gif"></a>
+						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/images/twitter.png"></a>
+						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/images/web.jpg"></a>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<div class="ui-body ui-body-c-dos" style="border:none;padding:10px 0 50px;"><h3>Los que conocen España saben lo populares que son allá las tiendas de golosinas, donde venden variedades de gomitas a granel, tanto dulces como ácidas. Mercedes Toscano, una gallega que trabaja en la Bolsa, instaló uno de estos locales en Santiago: Mininolas. Ahí llegan desde España gomitas a granel, ramos, brochetas, bolsitas, mentitas y chicles, productos que son solicitados por personas de todas las edades. </h3></div>
+					</td>
+				</tr>	
+			</table>	
+			<!-- end contenido -->
 
 		</div>
 		<div data-role="footer" class="jqm-footer">
