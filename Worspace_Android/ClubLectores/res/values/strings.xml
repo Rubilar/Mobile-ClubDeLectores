@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">ClubLectores</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="error_config">Por favor, revice el %1$s cconstante y volver a compilar la aplicación.</string>
+    <string name="already_registered">Dispositivo ya está registrado.</string>
+    <string name="gcm_registered">GCM: dispositivo registrado con exito!</string>
+    <string name="gcm_unregistered">GCM: dispositivo desregistrado con éxito!</string>
+    <string name="gcm_message">Revisa todo lo nuevo!</string>
+    <string name="gcm_error">GCM: error  (%1$s).</string>
+    <string name="gcm_recoverable_error">GCM: error de recuperacion (%1$s).</string>
+    <string name="gcm_deleted">GCM: servidor eliminado %1$d mensajes pendientes!</string>
+    <string name="server_registering">(intento %1$d/%2$d) para registrar el dispositivo en el servidor de demostración.</string>
+    <string name="server_registered">Desde servidor Demostración: elimina correctamente dispositivo!</string>
+    <string name="server_unregistered">From Demo Server: successfully removed device!</string>
+    <string name="server_register_error">No se pudo registrar el dispositivo en el servidor de demostración después de  %1$d intentos.</string>
+    <string name="server_unregister_error">No se puede anular el registro de dispositivo en el servidor de demostración (%1$s).</string>
+    <string name="options_register">Registrar</string>
+    <string name="options_unregister">Desregistar</string>
+    <string name="options_clear">Limpiar</string>
+    <string name="options_exit">exit</string>
+    <string name="botton_intro">Ir a Inversiones</string>
+    
+</resources>
