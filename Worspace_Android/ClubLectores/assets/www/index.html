@@ -30,9 +30,7 @@
                 })
             });
 		}
-
     </script>    
-
 </head>
 <body>
 	<div data-role="page" id="home" class="jqm-demos jqm-demos-home">
@@ -40,32 +38,29 @@
 			<h1 class="jqm-logo"><img src="img/logo-club.gif" alt="jQuery Mobile Framework"></h1>
 			<a href="#" class="jqm-navmenu-link" data-icon="bars" data-iconpos="notext">Navigation</a>
 		</div><!-- /header -->
-
 		<div data-role="content" class="jqm-content">
 			<h2 class="jqm-home-widget">Bienvenidos al club de lectores el mercurio</h2>
-						<div id="placeholder"></div>
+			<div id="placeholder"></div>
 			<p class="jqm-intro">Club de Lectores lo invita a ser parte de nuestro club y aprovechar los m&uacute;ltiples beneficios que tenemos para usted, s&oacute;lo debe presentar su tarjeta en los diferentes establecimientos asociados, busquelos en las Categorias.</p>
-
 			<h2>Categorias</h2>
 			<div  data-role="collapsible-set" data-theme="b" data-content-theme="d">
 				<ul id="category"  data-role="listview" data-theme="d" data-divider-theme="d" data-icon="false" data-global-nav="docs" class="jqm-list">
 				</ul>
 			</div>
 		</div><!-- /content -->
-
-		<div data-role="footer" class="jqm-footer">
-			<p>Copyright 2013 Club de Lectores - El Mercurio</p>
+		<div data-role="footer" class="jqm-footer" role="contentinfo">
+			<h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
+				<img src="css/themes/default/images//logo-footer.png">
+			</h1>
 		</div><!-- /jqm-footer -->
 		<div data-role="panel" class="jqm-nav-panel jqm-navmenu-panel" data-position="left" data-display="reveal" data-theme="c">
 			<ul data-role="listview" data-theme="d" data-divider-theme="d" data-icon="false" data-global-nav="docs" class="jqm-list">
-			
 				<li data-role="list-divider">Un mundo de Beneficios</li>
 				<li class="ui-btn-active ui-btn-up-d"><a href="#home">Home</a></li>
 				<li><a href="examples/">Beneficios m&aacute;s cercanos</a></li>
 				<li><a href="intro/">Eventos y Ventas</a></li>
 				<li><a href="faq/">Mapa de Beneficios</a></li>
 				<li><a rel="external" href="http://www.clubdelectores.cl">Beneficios Destacados</a></li>
-				
 				<li data-role="list-divider">Club de Lectores</li>
 				<li data-section="Widgets" data-filtertext="accordions collapsible sets content formatting grouped inset mini"><a href="widgets/accordions/">Casas Club</a></li>
 				<li data-section="Widgets" data-filtertext="ajax navigation navigate event method"><a href="widgets/navigation/" data-ajax="false">Contacto</a></li>
@@ -75,8 +70,6 @@
 			</ul>
 		</div><!-- /panel -->
 	</div><!-- /page -->
-	
-	
 	<div data-role="page" id="subCategoria" class="jqm-demos jqm-demos-home">
 		<div data-role="header" class="jqm-header" data-position="fixed">
 			<h1 class="jqm-logo"><img src="img/logo-club.gif" alt="jQuery Mobile Framework"></h1>
@@ -84,52 +77,32 @@
 				Restaurants
 			</div>
 		</div>
-		<div data-role="content" class="jqm-content">
+		<div data-role="collapsible-set" class="jqm-content" data-theme="b" data-content-theme="d">
 			<ul id="subCategoria" data-role="listview" data-filter="true" data-filter-placeholder="Buscar..." data-inset="true" data-theme="d" data-divider-theme="d" class="jqm-list">
 			</ul>
 		</div>
-		<div data-role="footer" class="jqm-footer">
-			<p>Copyright 2013 Club de Lectores - El Mercurio</p>
+		<div data-role="footer" class="jqm-footer" role="contentinfo">
+			<h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
+				<img src="css/themes/default/images//logo-footer.png">
+			</h1>
 		</div><!-- /jqm-footer -->
 	</div><!-- Page Deal -->
 	<div data-role="page" id="Beneficio" class="jqm-demos jqm-demos-home">
 		<div data-role="header" class="jqm-header">
 			<h1 class="jqm-logo"><img src="img/logo-club.gif" alt="jQuery Mobile Framework"></h1>
 		</div>
-
-
 		<div class="imagen">
-			<h2> MININOLAS <br><span style="color:#fff; margin-right:10px; font-weight:normal;">Gourmet</span></h2>
+			<span><h2>MININOLAS</h2><h3>Gourmet</h3></span>
 			<img src="http://club2.mersap.com/clublectores/wp-content/uploads/1363706859_21.jpg" width="100%">
 		</div>
-		<div data-role="content" class="jqm-content">
-
+		<div data-role="collapsible-set" class="jqm-content" data-theme="b" data-content-theme="d">
 			<!-- Contenido -->
-			<table style="margin:0 25px;">
+			<table>
 				<tr>
 					<td>
-						<div class="ui-grid-a ui-body-c-dos">
-							 <div class="ui-block-a" style="padding:12px 0 12px;">
-								<h3><b>Dirección</b></h3>
-								<h3><a target="_self" href="map.php?longitude=-70.5887954&amp;latitude=-33.4182431" data-rel="dialog" data-transition="slide" class="ui-link"><span class="list_direcciones">Presidente Riesco  3198, Las Condes, Santiago</span> - <span class="list_direcciones">Renato Sánchez  40, Las Condes, Santiago</span> - </a></h3>
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<div class="ui-grid-a ui-body-c-dos">
-							 <div class="ui-block-a"  style="padding:12px 0 12px;">
-								<h3><b>Fono</b></h3>
-							</div>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/images/facebook.gif"></a>
-						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/images/twitter.png"></a>
-						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/images/web.jpg"></a>
+						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/themes/default/images/facebook.png"></a>
+						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/themes/default/images/twitter.png"></a>
+						<a href="" data-rel="dialog" data-transition="slide" class="ui-link"><img src="css/themes/default/images/twitter.png"></a>
 					</td>
 				</tr>
 				<tr>
@@ -139,13 +112,12 @@
 				</tr>	
 			</table>	
 			<!-- end contenido -->
-
 		</div>
-		<div data-role="footer" class="jqm-footer">
-			<p>Copyright 2013 Club de Lectores - El Mercurio</p>
+		<div data-role="footer" class="jqm-footer" role="contentinfo">
+			<h1 class="ui-title" tabindex="0" role="heading" aria-level="1">
+				<img src="css/themes/default/images//logo-footer.png">
+			</h1>
 		</div><!-- /jqm-footer -->
 	</div><!-- Page Deal -->
 </body>
-
-
 </html>
