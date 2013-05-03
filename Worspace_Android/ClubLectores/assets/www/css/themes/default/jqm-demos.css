@@ -286,7 +286,6 @@ body, .jqm-demos  {
 	font-weight: 300;
 	font-size: 1.6em;
 	color: #3ca4ba ;
-	padding-top: .6em;
 	clear:both;
 }
 .jqm-home-welcome h2 {
@@ -294,7 +293,6 @@ body, .jqm-demos  {
 	font-weight: 300;
 	font-size: 1.6em;
 	color: #3ca4ba ;
-	padding-top: .6em;
 	clear:both;
 }
 .jqm-home-welcome .jqm-button {
@@ -310,7 +308,6 @@ h2.jqm-home-widget {
 	font-weight: 300;
 	font-size: 1.6em;
 	color: #3ca4ba ;
-	padding-top: .6em;
 	clear:both;
 }
 .home-pop p {
@@ -351,9 +348,8 @@ h2.jqm-home-widget {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-size: .9em;
-	margin: .5em .8em 1em .8em;
-	padding-bottom: .5em;
 	border: none;
+	padding-bottom: .5em;
 	color: #555;
 }
 .jqm-demos-index .jqm-content p.jqm-intro {
@@ -410,7 +406,7 @@ h2.jqm-home-widget {
 		font-weight: 300;
 		font-size: 1.6em;
 		color: #3ca4ba ;
-		padding-top: .6em;
+		: .6em;
 		clear:both;
 	}
 }
@@ -1051,7 +1047,7 @@ h2.jqm-home-widget {
 	font-size: 18px;
 	background: #3ca4ba;
 	text-align:center;
-	padding-top: 10px;
+	: 10px;
 	padding-bottom: 10px;
 	color: #fff;
 }
@@ -1067,7 +1063,7 @@ h2.jqm-home-widget {
 	width: 100%;
 	color: rgb(256, 256, 256);
 	background: rgba(60, 164, 186, 0.9);
-	padding-top: 5px;
+	: 5px;
 	padding-bottom: 5px;
 	font-family: 'Open Sans', sans-serif ;
 	font-size: 20px;
@@ -1091,17 +1087,36 @@ h2.jqm-home-widget {
 	margin-top : 0px;
 	padding-left: 8px;
 }
-.ui-footer .ui-title{ 
+.ui-footer img{ 
 	min-height:1.1em;
 	text-align:left;
 	font-size:16px;
 	display:block;
-	padding: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
 	text-overflow:ellipsis;
 	overflow:hidden;
 	white-space:nowrap;
 	outline:0!important;
 	margin: none;
 }
+.jqm-content > p {
+	border-top:1px solid #ccc;;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400; 
+	font-size: 14px;
+	color: #555;
+	line-height: 22px;
+	text-shadow: .5em .8em 1em .8em;
+	padding-right: 10px;
+	padding-left: 10px;
+}
 
 
+
+#map-canvas {
+        margin: 0;
+        padding: 0;
+        height: 500px;
+}
